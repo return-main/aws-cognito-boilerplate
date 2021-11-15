@@ -1,5 +1,3 @@
-import CSS from "csstype";
-
 /**
  * Used by Auth
  */
@@ -82,50 +80,4 @@ export interface SignUpCustomConfig {
 export interface AmplifyConfig {
   Auth: Auth;
   language?: string;
-}
-
-/**
- * Used by the Authenticator theme prop
- */
-export interface AmplifyTheme {
-  container?: CSS.Properties;
-  formContainer?: CSS.Properties;
-  formSection?: CSS.Properties;
-  formField?: CSS.Properties;
-
-  sectionHeader?: CSS.Properties;
-  sectionBody?: CSS.Properties;
-  sectionFooter?: CSS.Properties;
-  sectionFooterPrimaryContent?: CSS.Properties;
-  sectionFooterSecondaryContent?: CSS.Properties;
-
-  input?: CSS.Properties;
-  button?: CSS.Properties;
-  photoPickerButton?: CSS.Properties;
-  photoPlaceholder?: CSS.Properties;
-  signInButton?: CSS.Properties;
-  signInButtonIcon?: CSS.Properties;
-  signInButtonContent?: CSS.Properties;
-  amazonSignInButton?: CSS.Properties;
-  facebookSignInButton?: CSS.Properties;
-  googleSignInButton?: CSS.Properties;
-  oAuthSignInButton?: CSS.Properties;
-
-  formRow?: CSS.Properties;
-  strike?: CSS.Properties;
-  strikeContent?: CSS.Properties;
-  actionRow?: CSS.Properties;
-  a?: CSS.Properties;
-
-  hint?: CSS.Properties;
-  radio?: CSS.Properties;
-  label?: CSS.Properties;
-  inputLabel?: CSS.Properties;
-  toast?: CSS.Properties;
-
-  navBar?: CSS.Properties;
-  nav?: CSS.Properties;
-  navRight?: CSS.Properties;
-  navItem?: CSS.Properties;
-  navButton?: CSS.Properties;
 }

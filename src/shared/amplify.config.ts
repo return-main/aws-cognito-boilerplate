@@ -5,18 +5,20 @@ import { UsernameAttributes } from "aws-amplify-react";
 import { IAuthenticatorProps } from "aws-amplify-react/lib-esm/Auth/Authenticator";
 import {
   AmplifyConfig,
-  AmplifyTheme,
   SignUpCustomConfig,
 } from "shared/interfaces/amplify.interface";
+import { AmplifyTheme } from 'aws-amplify-react';
 
 /**
  * You can create your own theme and use it to render Amplify components
  * Your custom theme must use the selectors from the following
  * template: https://github.com/aws-amplify/amplify-js/blob/master/packages/aws-amplify-react/src/Amplify-UI/Amplify-UI-Theme.tsx
  */
-const amplifyTheme: AmplifyTheme = {
-  container: { backgroundColor: colors.background },
-};
+const amplifyTheme = Object.assign({}, AmplifyTheme, {
+  container: {
+    backgroundColor: colors.background
+  }
+});
 
 /**
  * When using custom components you can hide default Amplify components here

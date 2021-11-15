@@ -1,7 +1,6 @@
 import React from "react";
 import { SignUp } from "aws-amplify-react";
 import { ISignUpProps } from "aws-amplify-react/lib-esm/Auth/SignUp";
-import { AmplifyTheme } from "shared/interfaces/amplify.interface";
 import {
   Input,
   Form,
@@ -24,7 +23,7 @@ class CustomSignUp extends SignUp {
     this.signUpFields = props.signUpConfig?.signUpFields || [];
   }
 
-  showComponent(theme: AmplifyTheme) {
+  showComponent(theme: any) {
     this.sortFields();
     return (
       <SingUpContainer>

@@ -1,7 +1,6 @@
 import React, { MouseEvent } from "react";
 import { SignIn, UsernameAttributes } from "aws-amplify-react";
 import { ISignInProps } from "aws-amplify-react/lib-esm/Auth/SignIn";
-import { AmplifyTheme } from "shared/interfaces/amplify.interface";
 import {
   Form,
   FormField,
@@ -26,7 +25,7 @@ class CustomSignIn extends SignIn {
     };
   }
 
-  showComponent(theme: AmplifyTheme) {
+  showComponent(theme: any) {
     return (
       <SingInContainer>
         <Form>

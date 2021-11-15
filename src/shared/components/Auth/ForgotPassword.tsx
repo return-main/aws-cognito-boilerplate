@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { ForgotPassword } from "aws-amplify-react";
 import { IAuthPieceProps } from "aws-amplify-react/lib-esm/Auth/AuthPiece";
-import { AmplifyTheme } from "shared/interfaces/amplify.interface";
 import {
   Input,
   Form,
@@ -26,7 +25,7 @@ class CustomForgotPassword extends ForgotPassword {
     this._validAuthStates = ["forgotPassword"];
   }
 
-  renderRequestCode(theme: AmplifyTheme) {
+  renderRequestCode(theme: any) {
     return (
       <FormField>
         <label htmlFor={this.props.usernameAttributes}>
@@ -45,7 +44,7 @@ class CustomForgotPassword extends ForgotPassword {
     );
   }
 
-  renderRequestNewPassword(theme: AmplifyTheme) {
+  renderRequestNewPassword(theme: any) {
     return (
       <>
         <FormField theme={theme}>
@@ -82,7 +81,7 @@ class CustomForgotPassword extends ForgotPassword {
     );
   }
 
-  showComponent(theme: AmplifyTheme) {
+  showComponent(theme: any) {
     return (
       <CustomForgotPasswordContainer>
         <Form>

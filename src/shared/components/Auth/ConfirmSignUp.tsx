@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { ConfirmSignUp } from "aws-amplify-react";
 import { IAuthPieceProps } from "aws-amplify-react/lib-esm/Auth/AuthPiece";
-import { AmplifyTheme } from "shared/interfaces/amplify.interface";
 import {
   Container,
   Form,
@@ -23,7 +22,7 @@ class CustomConfirmSignUp extends ConfirmSignUp {
     this._validAuthStates = ["confirmSignUp"];
   }
 
-  showComponent(theme: AmplifyTheme) {
+  showComponent(theme: any) {
     const username = this.usernameFromAuthData();
     return (
       <ConfirmSignUpContainer>
