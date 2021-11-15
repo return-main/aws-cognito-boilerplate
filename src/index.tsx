@@ -2,8 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Authenticator } from "aws-amplify-react";
 import { GlobalStyle } from "shared/styles";
-import { Config, isAuthenticated } from "shared/utils";
+import { isAuthenticated } from "shared/utils";
 import { amplifyConfig, authenticatorConfig } from "shared/amplify.config";
+import { Amplify } from "aws-amplify";
 import { AuthState } from "shared/interfaces/amplify.interface";
 import * as serviceWorker from "./serviceWorker";
 import App from "App";
@@ -28,7 +29,7 @@ const CognitoBoilerplate = () => {
 
 // Wait for Amplify configuration apply
 (async () => {
-  await Config.getInstance().init(amplifyConfig);
+  Amplify.configure(amplifyConfig);
   ReactDOM.render(<CognitoBoilerplate />, document.getElementById("root"));
 })();
 

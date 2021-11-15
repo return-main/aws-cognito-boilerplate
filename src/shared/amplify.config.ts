@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { colors } from "./styles";
-import "@aws-amplify/ui/dist/style.css";
+// import "@aws-amplify/ui/dist/style.css";
 import { UsernameAttributes } from "aws-amplify-react";
 import { IAuthenticatorProps } from "aws-amplify-react/lib-esm/Auth/Authenticator";
 import {
@@ -25,13 +25,12 @@ const amplifyTheme: AmplifyTheme = {
 const amplifyHiddenComponents: ReactNode[] = [];
 
 /**
- * This object is used by Config.getInstance().init()
- * or Amplify.configure() method.
+ * This object is used by Amplify.configure() method.
  * To add more fields check the following link: https://aws-amplify.github.io/docs/js/authentication#manual-setup
  */
 export const amplifyConfig: AmplifyConfig = {
   Auth: {
-    identityPoolId: process.env.REACT_APP_IDENTITY_POOL_ID,
+    identityPoolId: undefined,
     region: process.env.REACT_APP_REGION,
     userPoolId: process.env.REACT_APP_USER_POOL_ID,
     userPoolWebClientId: process.env.REACT_APP_USER_POOL_WEBCLIENT_ID,

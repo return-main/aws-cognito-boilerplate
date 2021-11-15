@@ -41,7 +41,6 @@ We provide to Amplify a configuration file that can be edited inside `shared/amp
 ```ts
 export const amplifyConfig: AmplifyConfig = {
   Auth: {
-    identityPoolId: process.env.REACT_APP_IDENTITY_POOL_ID,
     region: process.env.REACT_APP_REGION,
     userPoolId: process.env.REACT_APP_USER_POOL_ID,
     userPoolWebClientId: process.env.REACT_APP_USER_POOL_WEBCLIENT_ID,
@@ -67,7 +66,6 @@ i.e:
 ```ts
 export const amplifyConfig: AmplifyConfig = {
   Auth: {
-    identityPoolId: process.env.REACT_APP_IDENTITY_POOL_ID,
     region: process.env.REACT_APP_REGION,
     userPoolId: process.env.REACT_APP_USER_POOL_ID,
     userPoolWebClientId: process.env.REACT_APP_USER_POOL_WEBCLIENT_ID,
@@ -112,7 +110,7 @@ const CognitoBoilerplate = () => {
 
 // Wait for Amplify configuration apply
 (async () => {
-  await Config.getInstance().init(amplifyConfig);
+  Amplify.configure(amplifyConfig);
   ReactDOM.render(<CognitoBoilerplate />, document.getElementById("root"));
 })();
 ```

@@ -3,22 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
-    "aws-amplify": "^3.0.5",
-    "aws-amplify-react": "^4.1.4",
+    "@aws-amplify/ui-react": "^1.2.24",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.11.7",
+    "@types/react": "^17.0.34",
+    "@types/react-dom": "^17.0.11",
+    "aws-amplify": "^4.3.6",
+    "aws-amplify-react": "^5.1.7",
+    "csstype": "^3.0.9",
     "global": "^4.4.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
     "remove": "^0.1.5",
-    "styled-components": "^5.0.1",
-    "typescript": "^3.8.3"
+    "styled-components": "^5.3.3",
+    "typescript": "^4.4.4"
   },
   "scripts": {
     "start": "cross-env SKIP_PREFLIGHT_CHECK=true react-scripts start",
@@ -44,12 +46,12 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/cypress": "^6.0.0",
-    "@types/styled-components": "^5.0.1",
+    "@testing-library/cypress": "^8.0.2",
+    "@types/styled-components": "^5.1.15",
     "add": "^2.0.6",
-    "cross-env": "^7.0.2",
-    "cypress": "^4.4.0",
-    "webpack": "^4.42.1",
-    "yarn": "^1.22.4"
+    "cross-env": "^7.0.3",
+    "cypress": "^9.0.0",
+    "webpack": "^5.64.0",
+    "yarn": "^1.22.17"
   }
 }
